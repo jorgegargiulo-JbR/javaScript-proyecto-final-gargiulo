@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4b6cb7, #182848);
+    padding: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Contenedor */
+#currency-converter {
+    background: #fff;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #4b0082;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+}
+
+/* Formulario */
+form {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    margin: 0.625rem 0 0.3125rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.currency-selector {
+    display: flex;
+    align-items: center; 
+    gap: 0.5rem; 
+}
+
+/* Banderas */
+.flag-icon {
+    height: auto;
+    padding-bottom: .5rem;
+    object-fit: contain;
+}
+
+/* Ajustes del input y del select */
+input, select, button {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #ccc;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/* Eliminar flechas en navegadores basados en Webkit (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none; /* Propiedad estándar para compatibilidad */
+    margin: 0;
+}
+
+/* Eliminar flechas en Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield; /* Propiedad estándar para compatibilidad */
+}
+
+select {
+    appearance: none;
+    background-color: white;
+}
+
+/* Botones */
+button {
+    width: 100%; 
+    padding: 0.625rem;
+    font-size: 1rem;
+    border-radius: 0.3125rem;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+    background: #4b0082;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #9370db;
+}
+
+#boton-limpiar {
+    background: #b22222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: .9375rem;
+}
+
+#boton-limpiar:hover {
+    background: #dc143c;
+}
+
+#resultado {
+    min-height: 1.25rem;
+    margin-top: 0.625rem;
+} 
+
+
+
+.flag-icon {
+    object-fit: contain;
+}
+
+.toast-header {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
